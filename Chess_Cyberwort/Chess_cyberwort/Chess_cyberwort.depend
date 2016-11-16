@@ -1,0 +1,13 @@
+# depslib dependency file v1.0
+1467296245 source:d:\projects\chess_cyberwort\chess_cyberwort\main.cpp
+	"SDL2/SDL.h"
+	<iostream>
+
+1446667744 source:d:\projects\chess_cyberwort\chess_cyberwort\resource.rc
+	<windows.h>
+	<commctrl.h>
+	<richedit.h>
+	"resource.h"
+
+1446667744 d:\projects\chess_cyberwort\chess_cyberwort\resource.h
+

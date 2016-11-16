@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1467475165 source:d:\projects\chess_cyberwort\movements\movements\main.cpp
+	<SDL2/SDL.H>
+	<iostream>
+

@@ -1,0 +1,8 @@
+# depslib dependency file v1.0
+1466660097 source:d:\projects\any\app.c
+	<windows.h>
+
+1446667744 source:d:\projects\any\main.cpp
+	<tchar.h>
+	<windows.h>
+

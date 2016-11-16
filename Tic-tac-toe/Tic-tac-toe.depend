@@ -1,0 +1,10 @@
+# depslib dependency file v1.0
+1476069239 source:c:\users\cedwa\desktop\tic-tac-toe\main.cpp
+	<cstdio>
+	<windows.h>
+	<SDL2/SDL.h>
+	<SDL2/SDL_keyboard.h>
+	<SDL2/SDL_image.h>
+	<iostream>
+	<cstdlib>
+

@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1467383749 source:d:\projects\chess_cyberwort\keypress\main.cpp
+	<SDL2/SDL.H>
+	<iostream>
+
