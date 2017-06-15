@@ -48,8 +48,6 @@ int main()
                        "Hug", "Hugging u tttttiiiiigggghhhhttttllllyyyy!!! ^_^",
                        "love", "I love you more :*",
                        "Love", "I love you more :*",
-
-
                      };
 
    gets(str);
@@ -90,5 +88,3 @@ int main()
 
    return(0);
 }
-
-

@@ -1,0 +1,23 @@
+Basic Format:
+
+int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLine, int CmdShow()
+{
+
+	return 0;
+}
+
+Note:
+	This Function is used instead of the main() function. THis is where the excecution begins.
+
+The parameters are as follows:
+
+HINSTANCE hInstance
+	Handle to the programs executable module (the .exe file in memory)
+HINSTANCE hPrevInstance
+	Always NULL for Win32 programs.
+LPSTR lpCmdLine
+	The command line arguments as a single "string". NOT including the program name. 
+	LPSTR is equuivalent to char*
+int nCmdShow
+	An integer value which may be passed to ShowWindow().(Discussed later)
+	

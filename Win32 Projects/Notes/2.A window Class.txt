@@ -1,0 +1,70 @@
+A Window Class stores information about a type of window,
+including it's Window Procedure which controls the window,
+the small and large icons for the window, and the background color.
+This way, you can register a class once, and create as many windows as you want from it,
+without having to specify all those attributes over and over. 
+Most of the attributes you set in the window class can be changed on a 
+per-window basis if desired.
+
+
+A Window Class has NOTHING to do with C++ classes.
+
+const char g_szClassName[] = "myWindowClass";
+The variable above stores the name of our window class, 
+we will use it shortly to register our window class with the system.
+
+    WNDCLASSEX wc;
+
+    wc.cbSize        = sizeof(WNDCLASSEX);
+    wc.style         = 0;
+    wc.lpfnWndProc   = WndProc;
+    wc.cbClsExtra    = 0;
+    wc.cbWndExtra    = 0;
+    wc.hInstance     = hInstance;
+    wc.hIcon         = LoadIcon(NULL, IDI_APPLICATION);
+    wc.hCursor       = LoadCursor(NULL, IDC_ARROW);
+    wc.hbrBackground = (HBRUSH)(COLOR_WINDOW+1);
+    wc.lpszMenuName  = NULL;
+    wc.lpszClassName = g_szClassName;
+    wc.hIconSm       = LoadIcon(NULL, IDI_APPLICATION);
+
+    if(!RegisterClassEx(&wc))
+    {
+        MessageBox(NULL, "Window Registration Failed!", "Error!",
+            MB_ICONEXCLAMATION | MB_OK);
+        return 0;
+    }
+
+	
+This is the code we use in WinMain() to register our window class. We fill out the members of a WNDCLASSEX structure and call RegisterClassEx().
+
+The members of the struct affect the window class as follows:
+
+cbSize
+The size of the structure.
+style
+Class Styles (CS_*), not to be confused with Window Styles (WS_*) This can usually be set to 0.
+lpfnWndProc
+Pointer to the window procedure for this window class.
+cbClsExtra
+Amount of extra data allocated for this class in memory. Usually 0.
+cbWndExtra
+Amount of extra data allocated in memory per window of this type. Usually 0.
+hInstance
+Handle to application instance (that we got in the first parameter of WinMain()).
+hIcon
+Large (usually 32x32) icon shown when the user presses Alt+Tab.
+hCursor
+Cursor that will be displayed over our window.
+hbrBackground
+Background Brush to set the color of our window.
+lpszMenuName
+Name of a menu resource to use for the windows with this class.
+lpszClassName
+Name to identify the class with.
+hIconSm
+Small (usually 16x16) icon to show in the taskbar and in the top left corner of the window.
+
+We then call RegisterClassEx() and check for failure, 
+if it fails we pop up a message which says so and abort the program by returning from the 
+WinMain() function.
