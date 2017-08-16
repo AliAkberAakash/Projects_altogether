@@ -1,0 +1,34 @@
+# depslib dependency file v1.0
+1502642027 source:d:\projects\projects_altogether\std info mngr\student information manager\main.cpp
+	<bits/stdc++.h>
+	"menu.h"
+	<windows.h>
+
+1502115530 d:\projects\projects_altogether\std info mngr\student information manager\class_templates.h
+	<bits/stdc++.h>
+
+1502641859 d:\projects\projects_altogether\std info mngr\student information manager\functions.h
+	<bits/stdc++.h>
+	<windows.h>
+	<ctime>
+	"names.h"
+
+1502685069 d:\projects\projects_altogether\std info mngr\student information manager\menu.h
+	<bits/stdc++.h>
+	<windows.h>
+	<ctime>
+	"files.h"
+
+1502376241 d:\projects\projects_altogether\std info mngr\student information manager\view_results.h
+	<bits/stdc++.h>
+	"menu.h"
+
+1502374905 d:\projects\projects_altogether\std info mngr\student information manager\edit_results.h
+	<bits/stdc++.h>
+
+1502511870 d:\projects\projects_altogether\std info mngr\student information manager\names.h
+	<bits/stdc++.h>
+
+1502685537 d:\projects\projects_altogether\std info mngr\student information manager\files.h
+	<bits/stdc++.h>
+
